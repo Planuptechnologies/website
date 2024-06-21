@@ -188,6 +188,10 @@ textarea {
         padding: 1rem;
         margin: 2rem;
     }
+
+    .hero {
+        height: 65vh;
+    }
 }
 
 
