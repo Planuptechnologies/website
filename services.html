@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Your comprehensive destination for integrated software and hardware solutions."
+    />
+    <meta
+      name="keywords"
+      content="Calicut Software, Kozhikode Software, Software Solutions, Accounting Software, Website Development, Inventory Management, POS Systems, IT Support,  Digital Marketing, Hardware Upgrades, IT Maintenance, CRM Software"
+    />
+    <title>Planup Technologies</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/planup-favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container-fluid bg-red fw-medium">
+        <a class="navbar-brand text-white" href="index.html"
+          ><img
+            class="logo"
+            src="/assets/images/planup-logo-new.jpg"
+            alt="" /><i class="fa-solid fa-mobile-screen-button fa-lg"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li>
+              <a class="nav-link text-white" href="/index.html">Home</a>
+            </li>
+            <li class="active-link">
+              <a class="nav-link text-white" href="/services.html">Services</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="/about.html">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="services text-center align-middle">
+      <h1 class="mt-5 mb-3 text-red text-shadow1">How We Can Help</h1>
+
+      <button
+        id="expand-all"
+        class="fw-bold btn my-4 bg-red text-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne,#collapseTwo,#collapseThree,#collapseFour,#collapseFive,#collapseSix,#collapseSeven,#collapseEight,#collapseNine"
+        aria-expanded="true"
+        aria-controls="collapseAll"
+        onclick="toggleName()"
+      >
+        Expand All
+      </button>
+
+      <div class="services-container shadow rounded p-5 m-5">
+        <div class="accordion text-center" id="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold focus-ring-danger"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-controls="collapseOne"
+              >
+                Accounting Software
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We provide accounting software solutions tailored for small
+                businesses to manage finances, invoicing, payroll, and tax
+                preparation.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Customer Relationship Management (CRM) Software
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We offer CRM software to help businesses manage customer
+                interactions, track leads, and improve sales and marketing
+                efforts.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Website Development and Hosting
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We develop and host professional websites for small businesses,
+                including e-commerce solutions for online sales.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Inventory Management Software
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We provide inventory management solutions to help businesses
+                track and manage their stock levels, orders, and suppliers
+                efficiently.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Point of Sale (POS) Systems
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We offer POS systems for retail businesses to process
+                transactions, manage sales, and track inventory in-store or
+                online.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                IT Support and Maintenance
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We offer IT support services to help businesses set up and
+                maintain their hardware and software systems, troubleshoot
+                technical issues, and ensure data security.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                Digital Marketing Services
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We offer digital marketing services including search engine
+                optimization (SEO), social media management, and email marketing
+                to help businesses promote their products and services online.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                Hardware Upgrades and Maintenance
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-light">
+                We provide hardware upgrades and maintenance services for
+                computers, servers, networking equipment, and other IT
+                infrastructure to ensure optimal performance and reliability.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                Training and Education Programs
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse">
+              <div class="accordion-body text-light">
+                Offer training and education programs to help small businesses
+                improve their digital literacy and learn how to use software and
+                hardware tools effectively.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="footer mt-auto py-3 text-light bg-red text-center text-shadow"
+    >
+      <h2 class="text-center">Planup Technologies</h2>
+      <h5 class="text-center mb-5 p-2">
+        "Your comprehensive destination for integrated software and hardware
+        solutions."
+      </h5>
+
+      <h3>
+        <a href="/contact.html" id="contact-link" class="mb-4 fw-bold"
+          >Contact Us</a
+        >
+      </h3>
+
+      <h6 class="m-0 text-center">123 Mavoor Road</h6>
+      <h6 class="m-0 text-center">Kozhikode, Kerala</h6>
+      <h6 class="m-0 text-center">Phone : 0495-4602338</h6>
+      <h6 class="m-0 text-center">Email : info@planuptechnologies.com</h6>
+      <h5 class="text-center mt-3">Copyright @ Planup Technologies 2024</h5>
+    </footer>
+
+    <!-- script -->
+    <script src="/assets/js/toggle_name.js"></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
