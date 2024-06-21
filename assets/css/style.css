@@ -172,15 +172,15 @@ textarea {
     }
 
     .contact-container  {
-        padding: 1px;
+        margin: 1rem;
     }
 
     .container {
-        padding: 2rem;
+        padding: 3rem;
     }
 
     .services-container {
-        margin: 1rem;
+        margin: 2rem;
         padding: 1rem;
     }
 
