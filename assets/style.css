@@ -1,0 +1,224 @@
+/* ------------------------------Color Scheme------------------------------ */
+
+.bg-red {
+    background-color:#bb0a1e;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px #800000;
+}
+
+.text-red {
+    color: #800000;
+}
+
+.text-shadow1 {
+    text-shadow: 1px 1px lightpink;
+}
+
+
+
+/* ------------------------------Home Page------------------------------ */
+
+.logo {
+    height: 75px;
+}
+
+.hero {
+    background-size: cover; 
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.hero-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation-name: slideup;
+    animation-duration: 3.5s;
+}
+
+.welcome-image {
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    animation-name: vanish;
+    animation-duration: 3.5s;
+}
+
+
+
+/* ------------------------------Navbar------------------------------ */
+
+.active-link {
+    font-weight: bolder ;
+    text-shadow: 3px 3px #800000;
+}
+
+
+
+/* ------------------------------Footer------------------------------ */
+
+#contact-link {
+    color: black;
+    text-decoration: none;
+    
+}
+
+#contact-link:hover {
+    color: whitesmoke;
+}
+
+footer {
+    bottom: 0;
+}
+
+
+
+/* ------------------------------Services Page------------------------------ */
+
+.services-container {
+    animation-name: slide-up;
+    animation-duration: 1s;
+    background-color: #f8e8e8;
+}
+
+.accordion-item {
+    background-color: #800000 ;
+}
+
+.accordion-button:focus {
+    background-color: #f8e8e8;
+}
+
+.accordion-button::selection {
+    background-color: #f8e8e8;
+}
+
+#expand-all:hover {
+    scale: 1.1;
+    background-color:#bb0a1e;
+}
+
+
+
+/* ------------------------------About Us Page------------------------------ */
+
+.about-container {
+    text-align: left;
+    padding: 10px;
+    margin: 50px;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    background-color: #f8e8e8;
+}
+
+.about-container h5 {
+    color: #800000;
+    text-shadow: 1px 1px lightpink;
+}
+
+
+
+/* ------------------------------Contact Page------------------------------ */
+
+.contact-container {
+    padding: 10px;
+    margin: 50px;
+    background-color: #f8e8e8;
+    align-items: center;
+    animation-name: pop;
+    animation-duration: 1s;
+}
+
+.contact:hover {
+    background-color: #bb0a1e;
+    color: whitesmoke;
+    scale: 1.1;
+}
+
+.contact-container input, textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 2px 5PX;
+    width: 80%;
+}
+
+textarea {
+    resize: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ------------------------------Media Queries------------------------------ */
+
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        max-width: 100%;
+        min-height: 65vh;
+    }
+}
+
+
+
+/* ------------------------------Animations------------------------------ */
+
+@keyframes slide-up {
+    0%{
+       transform:translateY(+10%);
+       opacity: .1;
+    }
+    25%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .3;
+    }
+    75%{
+        transform:translateY(0%);
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    0%{
+       transform:scale(.5);
+       opacity: .5;
+    }
+    100% {
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideup {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        }
+}
+
+@keyframes vanish {
+    0%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(.5);
+    }
+}
