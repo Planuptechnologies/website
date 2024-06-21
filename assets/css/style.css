@@ -85,6 +85,8 @@ footer {
     animation-name: slide-up;
     animation-duration: 1s;
     background-color: #f8e8e8;
+    margin: 3rem;
+    padding: 3rem;
 }
 
 .accordion-item {
@@ -110,8 +112,8 @@ footer {
 
 .about-container {
     text-align: left;
-    padding: 10px;
-    margin: 50px;
+    padding: 1rem;
+    margin: 3rem;
     animation-name: slide-up;
     animation-duration: 1s;
     background-color: #f8e8e8;
@@ -125,6 +127,10 @@ footer {
 
 
 /* ------------------------------Contact Page------------------------------ */
+
+.container {
+    padding: 3rem;
+}
 
 .contact-container {
     padding: 10px;
@@ -163,6 +169,24 @@ textarea {
     .hero-image {
         max-width: 100%;
         min-height: 65vh;
+    }
+
+    .contact-container  {
+        padding: 1px;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .services-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .about-container {
+        padding: 1rem;
+        margin: 2rem;
     }
 }
 
