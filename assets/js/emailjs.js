@@ -8,7 +8,7 @@
       .getElementById("contact-form")
       .addEventListener("submit", function (event) {
         event.preventDefault();
-        emailjs.sendForm("service_8n4xc7r", "contact_form", this).then(
+        emailjs.sendForm("service_mdz846m", "contact_form", this).then(
           () => {
             console.log("SUCCESS!");
             document.getElementById('success-message').classList.remove('hidden');
